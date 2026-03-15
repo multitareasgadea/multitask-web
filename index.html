@@ -3,13 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Multitask Services Mallorca | Electricidad, Solar, Domótica y Videovigilancia</title>
-  <meta name="description" content="Empresa multiservicios en Mallorca especializada en instalaciones eléctricas, energía solar fotovoltaica, domótica, videovigilancia y mantenimiento técnico para viviendas y negocios." />
-  <meta name="keywords" content="electricista Mallorca, instalaciones eléctricas Mallorca, placas solares Mallorca, domótica Mallorca, videovigilancia Mallorca, multiservicios Mallorca" />
+
+  <title>Electricista en Mallorca | Manacor, Petra y alrededores | Multitask Services Mallorca</title>
+  <meta name="description" content="Electricista en Mallorca especializado en instalaciones eléctricas, placas solares, domótica y videovigilancia. Servicio en Petra, Manacor, Sant Joan, Vilafranca de Bonany, Felanitx, Porreras, Sant Llorenç, Porto Cristo, Sineu e Inca." />
+  <link rel="canonical" href="https://www.multitask-services.com/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Electricista en Mallorca | Manacor, Petra y alrededores | Multitask Services Mallorca" />
+  <meta property="og:description" content="Instalaciones eléctricas, placas solares, domótica y videovigilancia en Mallorca. Servicio en Petra, Manacor y alrededores." />
+  <meta property="og:url" content="https://www.multitask-services.com/" />
+  <meta property="og:site_name" content="Multitask Services Mallorca" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "Multitask Services Mallorca",
+    "url": "https://www.multitask-services.com/",
+    "telephone": "+34 625 570 279",
+    "email": "multitaskservicesmallorca@gmail.com",
+    "areaServed": [
+      "Mallorca",
+      "Petra",
+      "Manacor",
+      "Sant Joan",
+      "Vilafranca de Bonany",
+      "Felanitx",
+      "Porreras",
+      "Sant Llorenç",
+      "Porto Cristo",
+      "Sineu",
+      "Inca"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mallorca",
+      "addressRegion": "Illes Balears",
+      "addressCountry": "ES"
+    },
+    "serviceType": [
+      "Instalaciones eléctricas",
+      "Instalaciones solares fotovoltaicas",
+      "Domótica",
+      "Videovigilancia",
+      "Mantenimiento técnico"
+    ]
+  }
+  </script>
+
   <style>
     :root {
       --bg: #0f1115;
       --bg-soft: #171a21;
+      --bg-light: #f7f9fc;
       --card: #ffffff;
       --text: #1b1f28;
       --muted: #5d6472;
@@ -19,8 +66,8 @@
       --white: #ffffff;
       --success: #25d366;
       --max: 1180px;
-      --radius: 16px;
-      --shadow: 0 10px 30px rgba(0,0,0,.08);
+      --radius: 18px;
+      --shadow: 0 12px 30px rgba(0,0,0,.08);
     }
 
     * {
@@ -36,7 +83,7 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       color: var(--text);
-      background: #f7f9fc;
+      background: var(--bg-light);
       line-height: 1.6;
     }
 
@@ -57,12 +104,13 @@
     }
 
     .topbar {
-      background: var(--bg);
+      background: rgba(15,17,21,.95);
       color: rgba(255,255,255,.92);
       position: sticky;
       top: 0;
       z-index: 1000;
       border-bottom: 1px solid rgba(255,255,255,.08);
+      backdrop-filter: blur(8px);
     }
 
     .topbar-inner {
@@ -102,39 +150,39 @@
       background-size: cover;
       background-position: center;
       color: var(--white);
-      padding: 96px 0 88px;
+      padding: 110px 0 90px;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.15fr .85fr;
+      grid-template-columns: 1.1fr .9fr;
       gap: 34px;
       align-items: center;
     }
 
     .hero h1 {
-      font-size: clamp(2rem, 4.5vw, 3.5rem);
+      font-size: clamp(2.1rem, 4.8vw, 3.7rem);
       line-height: 1.08;
       margin-bottom: 18px;
     }
 
     .hero p {
       color: rgba(255,255,255,.88);
-      font-size: 1.05rem;
-      max-width: 780px;
-      margin-bottom: 26px;
+      font-size: 1.08rem;
+      max-width: 760px;
+      margin-bottom: 24px;
     }
 
     .hero-card {
       background: rgba(255,255,255,.08);
       border: 1px solid rgba(255,255,255,.12);
-      backdrop-filter: blur(6px);
-      padding: 24px;
+      backdrop-filter: blur(8px);
+      padding: 26px;
       border-radius: var(--radius);
     }
 
     .hero-card h3 {
-      margin-bottom: 12px;
+      margin-bottom: 14px;
       font-size: 1.2rem;
     }
 
@@ -142,7 +190,7 @@
       list-style: none;
       display: grid;
       gap: 10px;
-      color: rgba(255,255,255,.9);
+      color: rgba(255,255,255,.92);
       font-size: .98rem;
     }
 
@@ -201,16 +249,16 @@
     }
 
     section {
-      padding: 78px 0;
+      padding: 82px 0;
     }
 
     .section-head {
       text-align: center;
-      margin-bottom: 36px;
+      margin-bottom: 38px;
     }
 
     .section-head h2 {
-      font-size: clamp(1.7rem, 3.3vw, 2.5rem);
+      font-size: clamp(1.8rem, 3.3vw, 2.5rem);
       margin-bottom: 10px;
     }
 
@@ -218,6 +266,36 @@
       max-width: 820px;
       margin: 0 auto;
       color: var(--muted);
+    }
+
+    .trust {
+      margin-top: -34px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .trust-item {
+      background: var(--card);
+      padding: 22px;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--line);
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .trust-item span {
+      display: block;
+      font-size: .95rem;
+      color: var(--muted);
+      font-weight: 400;
+      margin-top: 6px;
     }
 
     .cards {
@@ -232,11 +310,17 @@
       padding: 24px;
       box-shadow: var(--shadow);
       border: 1px solid var(--line);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 34px rgba(0,0,0,.10);
     }
 
     .card h3 {
       margin-bottom: 10px;
-      font-size: 1.15rem;
+      font-size: 1.1rem;
     }
 
     .card p {
@@ -254,7 +338,7 @@
     .about-box {
       background: var(--card);
       border-radius: var(--radius);
-      padding: 28px;
+      padding: 30px;
       box-shadow: var(--shadow);
       border: 1px solid var(--line);
     }
@@ -278,7 +362,7 @@
 
     .area-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 14px;
     }
 
@@ -296,7 +380,7 @@
       border: 1px solid var(--line);
       box-shadow: var(--shadow);
       border-radius: var(--radius);
-      padding: 28px;
+      padding: 30px;
       max-width: 980px;
       margin: 0 auto;
     }
@@ -361,19 +445,22 @@
       font-size: .95rem;
     }
 
+    @media (max-width: 1100px) {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .area-grid,
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
     @media (max-width: 980px) {
       .hero-grid,
       .about,
       .contact-wrap {
         grid-template-columns: 1fr;
-      }
-
-      .cards {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .area-grid {
-        grid-template-columns: repeat(2, 1fr);
       }
     }
 
@@ -383,12 +470,13 @@
       }
 
       .cards,
-      .area-grid {
+      .area-grid,
+      .trust-grid {
         grid-template-columns: 1fr;
       }
 
       .hero {
-        padding: 70px 0 60px;
+        padding: 78px 0 64px;
       }
 
       .actions {
@@ -418,9 +506,9 @@
   <section class="hero">
     <div class="container hero-grid">
       <div>
-        <h1>Electricidad, solar, domótica y videovigilancia en Mallorca</h1>
+        <h1>Electricista en Mallorca: instalaciones eléctricas, placas solares, domótica y videovigilancia</h1>
         <p>
-          Empresa multiservicios especializada en instalaciones eléctricas, sistemas fotovoltaicos,
+          Empresa multiservicios especializada en instalaciones eléctricas, energía solar fotovoltaica,
           control de luces desde el móvil, cámaras de seguridad y mantenimiento técnico para viviendas y negocios.
         </p>
         <div class="actions">
@@ -443,6 +531,17 @@
     </div>
   </section>
 
+  <section class="trust">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">Atención cercana<span>Trato directo y profesional</span></div>
+        <div class="trust-item">Soluciones modernas<span>Electricidad, solar y domótica</span></div>
+        <div class="trust-item">Servicio local<span>Mallorca, Manacor, Petra y alrededores</span></div>
+        <div class="trust-item">Presupuesto sin compromiso<span>Por teléfono, WhatsApp o email</span></div>
+      </div>
+    </div>
+  </section>
+
   <section id="servicios">
     <div class="container">
       <div class="section-head">
@@ -455,60 +554,43 @@
 
       <div class="cards">
         <div class="card">
-          <h3>Instalaciones eléctricas</h3>
-          <p>
-            Instalaciones nuevas, reformas eléctricas, cuadros eléctricos, enchufes, iluminación interior y exterior,
-            mejoras y ampliaciones.
-          </p>
+          <h3>⚡ Instalaciones eléctricas</h3>
+          <p>Instalaciones nuevas, reformas eléctricas, cuadros eléctricos, enchufes, iluminación interior y exterior, mejoras y ampliaciones.</p>
         </div>
 
         <div class="card">
-          <h3>Instalaciones fotovoltaicas</h3>
-          <p>
-            Sistemas solares para autoconsumo y viviendas, orientados al ahorro energético y a una instalación segura y eficiente.
-          </p>
+          <h3>☀️ Instalaciones fotovoltaicas</h3>
+          <p>Sistemas solares para autoconsumo y viviendas, orientados al ahorro energético y a una instalación segura y eficiente.</p>
         </div>
 
         <div class="card">
-          <h3>Domótica</h3>
-          <p>
-            Control de luces y otros dispositivos desde el móvil, automatización del hogar y soluciones cómodas y actuales.
-          </p>
+          <h3>📱 Domótica</h3>
+          <p>Control de luces y otros dispositivos desde el móvil, automatización del hogar y soluciones cómodas y actuales.</p>
         </div>
 
         <div class="card">
-          <h3>Videovigilancia</h3>
-          <p>
-            Instalación de cámaras y sistemas de seguridad para viviendas, negocios, accesos, exteriores y zonas comunes.
-          </p>
+          <h3>🎥 Videovigilancia</h3>
+          <p>Instalación de cámaras y sistemas de seguridad para viviendas, negocios, accesos, exteriores y zonas comunes.</p>
         </div>
 
         <div class="card">
-          <h3>Averías eléctricas</h3>
-          <p>
-            Diagnóstico y resolución de incidencias eléctricas, revisión de instalaciones y localización de fallos.
-          </p>
+          <h3>🔧 Averías eléctricas</h3>
+          <p>Diagnóstico y resolución de incidencias eléctricas, revisión de instalaciones y localización de fallos.</p>
         </div>
 
         <div class="card">
-          <h3>Mantenimiento</h3>
-          <p>
-            Mantenimiento técnico y pequeños trabajos en viviendas y negocios para mantener las instalaciones en buen estado.
-          </p>
+          <h3>🛠 Mantenimiento</h3>
+          <p>Mantenimiento técnico y pequeños trabajos en viviendas y negocios para mantener las instalaciones en buen estado.</p>
         </div>
 
         <div class="card">
-          <h3>Iluminación</h3>
-          <p>
-            Instalación y renovación de iluminación interior, exterior, técnica y decorativa, buscando funcionalidad y eficiencia.
-          </p>
+          <h3>💡 Iluminación</h3>
+          <p>Instalación y renovación de iluminación interior, exterior, técnica y decorativa, buscando funcionalidad y eficiencia.</p>
         </div>
 
         <div class="card">
-          <h3>Asesoramiento técnico</h3>
-          <p>
-            Propuestas adaptadas a cada proyecto para mejorar instalaciones eléctricas, sistemas solares y soluciones inteligentes.
-          </p>
+          <h3>📋 Asesoramiento técnico</h3>
+          <p>Propuestas adaptadas a cada proyecto para mejorar instalaciones eléctricas, sistemas solares y soluciones inteligentes.</p>
         </div>
       </div>
     </div>
@@ -545,7 +627,7 @@
       <div class="section-head">
         <h2>Zonas de servicio</h2>
         <p>
-          Trabajamos en toda Mallorca, especialmente en estas zonas.
+          Trabajamos en Mallorca, especialmente en estas zonas.
         </p>
       </div>
 
@@ -576,12 +658,14 @@
           <strong>energía solar fotovoltaica</strong>, <strong>domótica</strong> y <strong>videovigilancia</strong> para viviendas y negocios.
         </p>
         <p>
-          Ofrecemos soluciones para clientes que buscan un <strong>electricista en Mallorca</strong> con experiencia en nuevas instalaciones,
-          mejoras eléctricas, automatización del hogar y sistemas de seguridad.
+          Trabajamos especialmente en <strong>Petra</strong>, <strong>Manacor</strong>, <strong>Sant Joan</strong>,
+          <strong>Vilafranca de Bonany</strong>, <strong>Felanitx</strong>, <strong>Porreras</strong>,
+          <strong>Sant Llorenç</strong>, <strong>Porto Cristo</strong>, <strong>Sineu</strong> e <strong>Inca</strong>.
         </p>
         <p>
-          Si necesitas una instalación eléctrica, placas solares, control de luces desde el móvil o cámaras de seguridad en Mallorca,
-          puedes contactar con nosotros para solicitar información o presupuesto sin compromiso.
+          Si buscas un <strong>electricista en Mallorca</strong> para una instalación nueva, una avería, placas solares,
+          control de luces desde el móvil o cámaras de seguridad, puedes contactar con nosotros para solicitar información
+          o presupuesto sin compromiso.
         </p>
       </div>
     </div>
