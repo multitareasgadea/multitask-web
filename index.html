@@ -131,95 +131,37 @@
     .brand a {
       color: rgba(255,255,255,.92);
     }
-    
+
     .brand-link {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: rgba(255,255,255,.92);
-}
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: rgba(255,255,255,.92);
+    }
 
-.brand-logo {
-  width: 42px;
-  height: 42px;
-  object-fit: contain;
-  border-radius: 50%;
-  background: white;
-  padding: 2px;
-}
+    .brand-logo {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      border-radius: 50%;
+      background: white;
+      padding: 2px;
+    }
 
-.brand span {
-  font-weight: 700;
-  font-size: 1.15rem;
-  letter-spacing: .2px;
-}
+    .brand span {
+      font-weight: 700;
+      font-size: 1.15rem;
+      letter-spacing: .2px;
+    }
 
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: rgba(255,255,255,.92);
-  font-size: 1.8rem;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .topbar-inner {
-    flex-wrap: wrap;
-  }
-
-  .nav {
-    display: none;
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 12px 0 6px;
-  }
-
-  .nav.open {
-    display: flex;
-  }
-
-  .dropdown {
-    width: 100%;
-  }
-
-  .dropbtn {
-    width: 100%;
-    text-align: left;
-    padding: 8px 0;
-  }
-
-  .dropdown-content {
-    position: static;
-    display: none;
-    width: 100%;
-    min-width: 100%;
-    margin-top: 8px;
-    box-shadow: none;
-    border: 1px solid rgba(255,255,255,.12);
-    background: rgba(255,255,255,.04);
-  }
-
-  .dropdown-content a {
-    color: white;
-    border-bottom: 1px solid rgba(255,255,255,.08);
-  }
-
-  .dropdown-content a:hover {
-    background: rgba(255,255,255,.08);
-    color: white;
-  }
-
-  .dropdown.open .dropdown-content {
-    display: block;
-  }
-}
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: rgba(255,255,255,.92);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
 
     .nav {
       display: flex;
@@ -270,6 +212,7 @@
       border-bottom: 1px solid #f1f3f6;
       white-space: normal;
       line-height: 1.4;
+      text-align: left;
     }
 
     .dropdown-content a:last-child {
@@ -606,11 +549,73 @@
       }
     }
 
-    @media (max-width: 640px) {
-      .nav {
-        display: none;
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
       }
 
+      .topbar-inner {
+        flex-wrap: wrap;
+      }
+
+      .nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        padding: 18px 0 8px;
+        text-align: center;
+      }
+
+      .nav.open {
+        display: flex;
+      }
+
+      .nav a,
+      .dropbtn {
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+      }
+
+      .dropdown {
+        width: 100%;
+      }
+
+      .dropdown-content {
+        position: static;
+        display: none;
+        width: 100%;
+        min-width: 100%;
+        margin-top: 10px;
+        border-radius: 12px;
+        box-shadow: none;
+        border: 1px solid rgba(255,255,255,.10);
+        background: rgba(255,255,255,.04);
+      }
+
+      .dropdown-content a {
+        color: white;
+        border-bottom: 1px solid rgba(255,255,255,.08);
+        text-align: center;
+      }
+
+      .dropdown-content a:hover {
+        background: rgba(255,255,255,.08);
+        color: white;
+      }
+
+      .dropdown.open .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
       .cards,
       .area-grid,
       .trust-grid {
@@ -628,51 +633,43 @@
       .btn {
         width: 100%;
       }
-
-      .dropdown-content {
-        min-width: 100%;
-        left: 0;
-        right: 0;
-      }
     }
   </style>
 </head>
 <body>
 
   <header class="topbar">
-  <div class="container topbar-inner">
+    <div class="container topbar-inner">
 
-    <div class="brand">
-      <a href="/" class="brand-link">
-        <img src="/logo.png" alt="Logo Multitask Services" class="brand-logo">
-        <span>Multitask Services</span>
-      </a>
-    </div>
-
-    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
-
-    <nav class="nav" id="mainNav">
-
-      <div class="dropdown" id="servicesDropdown">
-        <button class="dropbtn" type="button">Servicios ▾</button>
-        <div class="dropdown-content">
-          <a href="/instalaciones-electricas.html">Instalaciones eléctricas</a>
-          <a href="/instalaciones-fotovoltaicas.html">Instalaciones fotovoltaicas</a>
-          <a href="/domotica.html">Domótica</a>
-          <a href="/videovigilancia.html">Videovigilancia</a>
-          <a href="/conectividad-internet.html">Conectividad a internet</a>
-          <a href="/comparador-energetico.html">Comparador energético</a>
-        </div>
+      <div class="brand">
+        <a href="/" class="brand-link">
+          <img src="/logo.png" alt="Logo Multitask Services" class="brand-logo">
+          <span>Multitask Services</span>
+        </a>
       </div>
 
-      <a href="#sobre-nosotros">Sobre nosotros</a>
-      <a href="#zonas">Zonas</a>
-      <a href="#contacto">Contacto</a>
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
 
-    </nav>
+      <nav class="nav" id="mainNav">
+        <div class="dropdown" id="servicesDropdown">
+          <button class="dropbtn" type="button">Servicios ▾</button>
+          <div class="dropdown-content">
+            <a href="/instalaciones-electricas.html">Instalaciones eléctricas</a>
+            <a href="/instalaciones-fotovoltaicas.html">Instalaciones fotovoltaicas</a>
+            <a href="/domotica.html">Domótica</a>
+            <a href="/videovigilancia.html">Videovigilancia</a>
+            <a href="/conectividad-internet.html">Conectividad a internet</a>
+            <a href="/comparador-energetico.html">Comparador energético</a>
+          </div>
+        </div>
 
-  </div>
-</header>
+        <a href="#sobre-nosotros">Sobre nosotros</a>
+        <a href="#zonas">Zonas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+    </div>
+  </header>
 
   <section class="hero">
     <div class="container hero-grid">
@@ -881,24 +878,47 @@
   </section>
 
   <footer>
-    © 2026 Multitask Services · Electricidad · Solar · Domótica · Videovigilancia
+    ©️ 2026 Multitask Services · Electricidad · Solar · Domótica · Videovigilancia
   </footer>
-<script>
-  const menuToggle = document.querySelector('.menu-toggle');
-  const mainNav = document.getElementById('mainNav');
-  const servicesDropdown = document.getElementById('servicesDropdown');
-  const dropbtn = servicesDropdown.querySelector('.dropbtn');
 
-  menuToggle.addEventListener('click', () => {
-    mainNav.classList.toggle('open');
-  });
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mainNav = document.getElementById('mainNav');
+    const servicesDropdown = document.getElementById('servicesDropdown');
+    const dropbtn = servicesDropdown.querySelector('.dropbtn');
 
-  dropbtn.addEventListener('click', (e) => {
-    if (window.innerWidth <= 768) {
-      e.preventDefault();
-      servicesDropdown.classList.toggle('open');
-    }
-  });
-</script>
+    menuToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      mainNav.classList.toggle('open');
+      servicesDropdown.classList.remove('open');
+    });
+
+    dropbtn.addEventListener('click', (e) => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        e.stopPropagation();
+        servicesDropdown.classList.toggle('open');
+      }
+    });
+
+    document.querySelectorAll('#mainNav a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+          mainNav.classList.remove('open');
+          servicesDropdown.classList.remove('open');
+        }
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      const clickInsideMenu = mainNav.contains(e.target);
+      const clickOnToggle = menuToggle.contains(e.target);
+
+      if (!clickInsideMenu && !clickOnToggle) {
+        mainNav.classList.remove('open');
+        servicesDropdown.classList.remove('open');
+      }
+    });
+  </script>
 </body>
 </html>
