@@ -24,38 +24,87 @@
   {
     "@context": "https://schema.org",
     "@type": "Electrician",
+    "@id": "https://www.multitask-services.com/#business",
     "name": "Multitask Services",
     "url": "https://www.multitask-services.com/",
     "telephone": "+34 625 570 279",
     "email": "multitaskservicesmallorca@gmail.com",
     "logo": "https://www.multitask-services.com/logo.png",
     "image": "https://www.multitask-services.com/logo.png",
-    "areaServed": [
-      "Mallorca",
-      "Petra",
-      "Manacor",
-      "Santa Margalida",
-      "Vilafranca de Bonany",
-      "Felanitx",
-      "Porreras",
-      "Sant Llorenç",
-      "Porto Cristo",
-      "Sineu",
-      "Inca"
-    ],
+    "description": "Empresa multiservicios especializada en instalaciones eléctricas, placas solares, domótica, videovigilancia y mantenimiento técnico en Mallorca.",
+    "priceRange": "€€",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Mallorca",
+      "addressLocality": "Petra",
       "addressRegion": "Illes Balears",
       "addressCountry": "ES"
     },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Petra"
+      },
+      {
+        "@type": "City",
+        "name": "Manacor"
+      },
+      {
+        "@type": "City",
+        "name": "Santa Margalida"
+      },
+      {
+        "@type": "City",
+        "name": "Vilafranca de Bonany"
+      },
+      {
+        "@type": "City",
+        "name": "Felanitx"
+      },
+      {
+        "@type": "City",
+        "name": "Porreres"
+      },
+      {
+        "@type": "City",
+        "name": "Sant Llorenç des Cardassar"
+      },
+      {
+        "@type": "City",
+        "name": "Porto Cristo"
+      },
+      {
+        "@type": "City",
+        "name": "Sineu"
+      },
+      {
+        "@type": "City",
+        "name": "Inca"
+      },
+      {
+        "@type": "Place",
+        "name": "Mallorca"
+      }
+    ],
     "serviceType": [
       "Instalaciones eléctricas",
       "Instalaciones solares fotovoltaicas",
       "Domótica",
       "Videovigilancia",
-      "Mantenimiento técnico"
-    ]
+      "Mantenimiento técnico",
+      "Averías eléctricas",
+      "Iluminación",
+      "Asesoramiento técnico"
+    ],
+    "sameAs": [
+      "https://share.google/bIQwaRkq2AEz2z3os"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+34 625 570 279",
+      "contactType": "customer service",
+      "areaServed": "ES",
+      "availableLanguage": ["es"]
+    }
   }
   </script>
 
@@ -351,6 +400,16 @@
       background: rgba(255, 255, 255, 0.08);
     }
 
+    .btn-google {
+      background: #ffffff;
+      color: #111;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+    }
+
+    .btn-google:hover {
+      background: #f3f4f6;
+    }
+
     section {
       padding: 82px 0;
     }
@@ -501,6 +560,29 @@
       margin-top: 12px;
     }
 
+    .google-box {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 30px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--line);
+      max-width: 980px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .google-box p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .google-actions {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
     .contact-wrap {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -648,7 +730,8 @@
         padding: 78px 0 64px;
       }
 
-      .actions {
+      .actions,
+      .google-actions {
         flex-direction: column;
       }
 
@@ -718,6 +801,7 @@
           <a class="btn btn-primary" href="tel:+34625570279">Llamar ahora</a>
           <a class="btn btn-whatsapp" href="https://wa.me/34625570279" target="_blank" rel="noopener noreferrer">WhatsApp</a>
           <a class="btn btn-outline" href="mailto:multitaskservicesmallorca@gmail.com?subject=Solicitud%20de%20presupuesto">Enviar email</a>
+          <a class="btn btn-google" href="https://share.google/bIQwaRkq2AEz2z3os" target="_blank" rel="noopener noreferrer">Ver perfil de Google</a>
         </div>
       </div>
 
@@ -841,7 +925,7 @@
         <div class="area-item">Santa Margalida</div>
         <div class="area-item">Vilafranca de Bonany</div>
         <div class="area-item">Felanitx</div>
-        <div class="area-item">Porreras</div>
+        <div class="area-item">Porreres</div>
         <div class="area-item">Sant Llorenç</div>
         <div class="area-item">Porto Cristo</div>
         <div class="area-item">Sineu</div>
@@ -861,11 +945,28 @@
           En <strong>Multitask Services</strong> ofrecemos servicios de <strong>electricista en Mallorca</strong> para viviendas, negocios y comunidades, especializados en instalaciones eléctricas, fotovoltaica, domótica y videovigilancia.
         </p>
         <p>
-          Trabajamos especialmente en <strong>Petra</strong>, <strong>Manacor</strong>, <strong>Santa Margalida</strong>, <strong>Vilafranca de Bonany</strong>, <strong>Felanitx</strong>, <strong>Porreras</strong>, <strong>Sant Llorenç</strong>, <strong>Porto Cristo</strong>, <strong>Sineu</strong> e <strong>Inca</strong>.
+          Trabajamos especialmente en <strong>Petra</strong>, <strong>Manacor</strong>, <strong>Santa Margalida</strong>, <strong>Vilafranca de Bonany</strong>, <strong>Felanitx</strong>, <strong>Porreres</strong>, <strong>Sant Llorenç</strong>, <strong>Porto Cristo</strong>, <strong>Sineu</strong> e <strong>Inca</strong>.
         </p>
         <p>
           Si buscas un <strong>electricista en Mallorca</strong> para una instalación nueva, una avería, placas solares, control de luces desde el móvil o cámaras de seguridad, puedes contactar con nosotros para solicitar información o presupuesto sin compromiso.
         </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="google-box">
+        <div class="section-head" style="margin-bottom: 18px;">
+          <h2>Opiniones y perfil en Google</h2>
+        </div>
+        <p>
+          Puedes ver nuestro perfil de empresa en Google, consultar opiniones de clientes y contactar directamente desde Google Maps.
+        </p>
+        <div class="google-actions">
+          <a class="btn btn-primary" href="https://share.google/bIQwaRkq2AEz2z3os" target="_blank" rel="noopener noreferrer">Ver perfil de Google</a>
+          <a class="btn btn-outline" href="https://share.google/bIQwaRkq2AEz2z3os" target="_blank" rel="noopener noreferrer">Ver opiniones</a>
+        </div>
       </div>
     </div>
   </section>
@@ -885,6 +986,7 @@
             <li><strong>WhatsApp:</strong> <a href="https://wa.me/34625570279" target="_blank" rel="noopener noreferrer">Enviar mensaje</a></li>
             <li><strong>Email:</strong> <a href="mailto:multitaskservicesmallorca@gmail.com?subject=Solicitud%20de%20presupuesto">multitaskservicesmallorca@gmail.com</a></li>
             <li><strong>Zona:</strong> Mallorca</li>
+            <li><strong>Google:</strong> <a href="https://share.google/bIQwaRkq2AEz2z3os" target="_blank" rel="noopener noreferrer">Ver Business Profile</a></li>
           </ul>
           <p class="contact-note">
             Presupuesto sin compromiso para instalaciones eléctricas, energía solar, domótica y videovigilancia.
@@ -899,6 +1001,7 @@
           <div class="actions">
             <a class="btn btn-primary" href="tel:+34625570279">Llamar ahora</a>
             <a class="btn btn-whatsapp" href="https://wa.me/34625570279" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a class="btn btn-google" href="https://share.google/bIQwaRkq2AEz2z3os" target="_blank" rel="noopener noreferrer">Abrir en Google</a>
           </div>
         </div>
       </div>
