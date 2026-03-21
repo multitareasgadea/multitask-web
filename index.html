@@ -9,6 +9,11 @@
     content="Electricista en Mallorca especializado en instalaciones eléctricas, placas solares, domótica y videovigilancia. Servicio en Petra, Manacor, Santa Margalida, Vilafranca de Bonany, Felanitx, Porreres, Sant Llorenç, Porto Cristo, Sineu e Inca."
   />
   <link rel="canonical" href="https://www.multitask-services.com/" />
+  <link rel="alternate" hreflang="es" href="https://www.multitask-services.com/" />
+  <link rel="alternate" hreflang="ca" href="https://www.multitask-services.com/ca/" />
+  <link rel="alternate" hreflang="en" href="https://www.multitask-services.com/en/" />
+  <link rel="alternate" hreflang="de" href="https://www.multitask-services.com/de/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.multitask-services.com/" />
   <link rel="icon" type="image/png" href="/logo.png" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Electricista en Mallorca | Manacor, Petra y alrededores | Multitask Services" />
@@ -70,7 +75,7 @@
       "telephone": "+34 625 570 279",
       "contactType": "customer service",
       "areaServed": "ES",
-      "availableLanguage": ["es"]
+      "availableLanguage": ["es", "ca", "en", "de"]
     }
   }
   </script>
@@ -253,6 +258,34 @@
     .dropdown-content a:hover {
       background: #f7f9fc;
       color: #111;
+    }
+
+    .lang-switcher {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-left: 6px;
+    }
+
+    .lang-switcher a {
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 6px 8px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      transition: 0.2s ease;
+    }
+
+    .lang-switcher a:hover {
+      color: var(--accent);
+      border-color: rgba(244, 176, 0, 0.4);
+    }
+
+    .lang-switcher a.active {
+      background: rgba(244, 176, 0, 0.15);
+      border-color: rgba(244, 176, 0, 0.45);
+      color: var(--accent);
     }
 
     @media (min-width: 769px) {
@@ -684,6 +717,12 @@
       .dropdown.open .dropdown-content {
         display: block;
       }
+
+      .lang-switcher {
+        width: 100%;
+        justify-content: center;
+        margin: 4px 0 8px;
+      }
     }
 
     @media (max-width: 640px) {
@@ -752,6 +791,13 @@
         <a href="#sobre-nosotros">Sobre nosotros</a>
         <a href="#zonas">Zonas</a>
         <a href="#contacto">Contacto</a>
+
+        <div class="lang-switcher" aria-label="Selector de idioma">
+          <a href="/" lang="es" class="active">ES</a>
+          <a href="/ca/" lang="ca">CA</a>
+          <a href="/en/" lang="en">EN</a>
+          <a href="/de/" lang="de">DE</a>
+        </div>
       </nav>
     </div>
   </header>
