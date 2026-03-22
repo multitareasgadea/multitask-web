@@ -1,0 +1,722 @@
+﻿<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Videovigilància a Mallorca | Càmeres de seguretat per a habitatges i negocis</title>
+  <meta name="description" content="Videovigilància a Mallorca amb càmeres de seguretat per a habitatges i negocis. Instal·lació, configuració, visió remota i assessorament. Servei a Petra, Manacor, Santa Margalida i voltants.">
+  <link rel="canonical" href="https://www.multitask-services.com/ca/videovigilancia.html">
+  <link rel="icon" type="image/png" href="/logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Videovigilància a Mallorca | Càmeres de seguretat per a habitatges i negocis">
+  <meta property="og:description" content="Videovigilància a Mallorca amb càmeres de seguretat per a habitatges i negocis. Instal·lació, configuració, visió remota i assessorament. Servei a Petra, Manacor, Santa Margalida i voltants.">
+  <meta property="og:url" content="https://www.multitask-services.com/ca/videovigilancia.html">
+  <meta property="og:site_name" content="Multitask Services">
+  <meta name="robots" content="index,follow">
+
+  <script type="application/ld+json">
+{
+    "@context":  "https://schema.org",
+    "@type":  "Electrician",
+    "name":  "Multitask Services",
+    "url":  "https://www.multitask-services.com/ca/videovigilancia.html",
+    "telephone":  "+34625570279",
+    "areaServed":  [
+                       "Mallorca",
+                       "Petra",
+                       "Manacor",
+                       "Santa Margalida",
+                       "Sant Joan",
+                       "Vilafranca de Bonany",
+                       "Felanitx",
+                       "Porreras",
+                       "Sant Llorenç",
+                       "Porto Cristo",
+                       "Sineu",
+                       "Inca"
+                   ],
+    "serviceType":  [
+                        "Videovigilància",
+                        "Càmeres de seguretat",
+                        "Control visual"
+                    ]
+}
+  </script>
+
+  <style>
+    :root{
+      --bg:#0f1115;
+      --bg-soft:#171a21;
+      --bg-light:#f7f9fc;
+      --card:#ffffff;
+      --text:#1b1f28;
+      --muted:#5d6472;
+      --line:#e8ecf1;
+      --accent:#f4b000;
+      --accent-dark:#d89b00;
+      --white:#ffffff;
+      --success:#25d366;
+      --max:1180px;
+      --radius:18px;
+      --shadow:0 12px 30px rgba(0,0,0,.08);
+    }
+
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:Arial, Helvetica, sans-serif;
+      color:var(--text);
+      background:var(--bg-light);
+      line-height:1.6;
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+      border-radius:14px;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    a:focus-visible,
+    button:focus-visible{
+      outline:3px solid rgba(244,176,0,.45);
+      outline-offset:3px;
+    }
+
+    .container{
+      width:min(100% - 32px, var(--max));
+      margin:0 auto;
+    }
+
+    .topbar{
+      background:rgba(15,17,21,.95);
+      color:rgba(255,255,255,.92);
+      position:sticky;
+      top:0;
+      z-index:1000;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      backdrop-filter:blur(8px);
+    }
+
+    .topbar-inner{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      min-height:72px;
+      gap:20px;
+    }
+
+    .brand{
+      font-weight:700;
+      font-size:1.15rem;
+      letter-spacing:.2px;
+    }
+
+    .brand a{
+      color:rgba(255,255,255,.92);
+    }
+
+    .brand-link{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      color:rgba(255,255,255,.92);
+    }
+
+    .brand-logo{
+      width:42px;
+      height:42px;
+      object-fit:contain;
+      border-radius:50%;
+      background:white;
+      padding:2px;
+    }
+
+    .brand span{
+      font-weight:700;
+      font-size:1.15rem;
+      letter-spacing:.2px;
+    }
+
+    .menu-toggle{
+      display:none;
+      background:none;
+      border:none;
+      color:rgba(255,255,255,.92);
+      font-size:1.8rem;
+      cursor:pointer;
+    }
+
+    .nav{
+      display:flex;
+      gap:18px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+
+    .nav a,
+    .dropbtn{
+      color:rgba(255,255,255,.88);
+      font-size:.95rem;
+      background:none;
+      border:none;
+      cursor:pointer;
+      font:inherit;
+      padding:0;
+    }
+
+    .nav a:hover,
+    .dropbtn:hover{
+      color:var(--accent);
+    }
+
+    .dropdown{
+      position:relative;
+    }
+
+    .dropdown-content{
+      display:none;
+      position:absolute;
+      top:28px;
+      left:0;
+      min-width:290px;
+      background:#ffffff;
+      border-radius:12px;
+      box-shadow:0 12px 30px rgba(0,0,0,.12);
+      overflow:hidden;
+      z-index:999;
+      border:1px solid #e8ecf1;
+    }
+
+    .dropdown-content a{
+      display:block;
+      padding:14px 16px;
+      color:#1b1f28;
+      font-size:.95rem;
+      border-bottom:1px solid #f1f3f6;
+      white-space:normal;
+      line-height:1.4;
+      text-align:left;
+    }
+
+    .dropdown-content a:last-child{
+      border-bottom:none;
+    }
+
+    .dropdown-content a:hover{
+      background:#f7f9fc;
+      color:#111;
+    }
+
+    @media (min-width:769px){
+      .dropdown:hover .dropdown-content{
+        display:block;
+      }
+    }
+
+    .hero{
+      background-size:cover;
+      background-position:center;
+      color:white;
+      padding:110px 0;
+    }
+
+    .hero h1{
+      font-size:clamp(2rem,4vw,3rem);
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      max-width:760px;
+      opacity:.9;
+    }
+
+    .actions{
+      margin-top:25px;
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:14px 22px;
+      border-radius:10px;
+      font-weight:700;
+      border:none;
+      cursor:pointer;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .btn-primary{
+      background:var(--accent);
+      color:#111;
+    }
+
+    .btn-whatsapp{
+      background:#25d366;
+      color:white;
+    }
+
+    section{
+      padding:80px 0;
+    }
+
+    .section-head{
+      text-align:center;
+      margin-bottom:40px;
+    }
+
+    .section-head h2{
+      font-size:clamp(1.8rem,3vw,2.4rem);
+      margin-bottom:10px;
+    }
+
+    .section-head p{
+      max-width:820px;
+      margin:auto;
+      color:var(--muted);
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:24px;
+      border:1px solid var(--line);
+      box-shadow:var(--shadow);
+    }
+
+    .card h3{
+      margin-bottom:10px;
+    }
+
+    .card p{
+      color:var(--muted);
+    }
+
+    .about{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
+    }
+
+    .about-text h2{
+      margin-bottom:18px;
+    }
+
+    .about-text p{
+      margin-bottom:14px;
+      color:var(--muted);
+    }
+
+    .image img{
+      width:100%;
+      height:320px;
+      object-fit:cover;
+    }
+
+    .seo-box{
+      background:white;
+      border-radius:var(--radius);
+      padding:28px;
+      border:1px solid var(--line);
+      box-shadow:var(--shadow);
+      max-width:900px;
+      margin:auto;
+    }
+
+    .seo-box p{
+      color:var(--muted);
+      margin-top:12px;
+    }
+
+    .contact-wrap{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+    }
+
+    .contact-card,
+    .cta-box{
+      background:white;
+      padding:28px;
+      border-radius:var(--radius);
+      border:1px solid var(--line);
+      box-shadow:var(--shadow);
+    }
+
+    .contact-card p{
+      margin-bottom:10px;
+    }
+
+    .cta-box{
+      background:var(--bg);
+      color:white;
+    }
+
+    .cta-box p{
+      color:rgba(255,255,255,.82);
+      margin:12px 0 20px;
+    }
+
+    footer{
+      background:#0b0d11;
+      color:white;
+      text-align:center;
+      padding:30px;
+    }
+
+    @media (max-width:980px){
+      .cards,
+      .about,
+      .contact-wrap{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width:768px){
+      .menu-toggle{
+        display:block;
+      }
+
+      .topbar-inner{
+        flex-wrap:wrap;
+      }
+
+      .nav{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        align-items:center;
+        gap:18px;
+        padding:18px 0 8px;
+        text-align:center;
+      }
+
+      .nav.open{
+        display:flex;
+      }
+
+      .nav a,
+      .dropbtn{
+        width:100%;
+        text-align:center;
+        font-size:1rem;
+      }
+
+      .dropdown{
+        width:100%;
+      }
+
+      .dropdown-content{
+        position:static;
+        display:none;
+        width:100%;
+        min-width:100%;
+        margin-top:10px;
+        border-radius:12px;
+        box-shadow:none;
+        border:1px solid rgba(255,255,255,.10);
+        background:rgba(255,255,255,.04);
+      }
+
+      .dropdown-content a{
+        color:white;
+        border-bottom:1px solid rgba(255,255,255,.08);
+        text-align:center;
+      }
+
+      .dropdown-content a:hover{
+        background:rgba(255,255,255,.08);
+        color:white;
+      }
+
+      .dropdown.open .dropdown-content{
+        display:block;
+      }
+
+      .actions{
+        flex-direction:column;
+      }
+
+      .btn{
+        width:100%;
+      }
+    }
+    .hero{
+      background:
+        linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+        url("https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg?auto=compress&cs=tinysrgb&w=1600");
+      background-size:cover;
+      background-position:center;
+      color:white;
+      padding:110px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+
+      <div class="brand">
+        <a href="/ca/" class="brand-link" aria-label="Anar a l'inici de Multitask Services">
+          <img src="/logo.png" alt="Logo de Multitask Services" class="brand-logo">
+          <span>Multitask Services</span>
+        </a>
+      </div>
+
+      <button class="menu-toggle" type="button" aria-label="Obrir menú" aria-controls="mainNav" aria-expanded="false">☰</button>
+
+      <nav class="nav" id="mainNav" aria-label="Navegació principal">
+        <div class="dropdown" id="servicesDropdown">
+          <button class="dropbtn" id="servicesButton" type="button" aria-expanded="false" aria-controls="servicesMenu">
+            Serveis ▾
+          </button>
+          <div class="dropdown-content" id="servicesMenu">
+            <a href="/ca/installacions-electriques.html">Instal·lacions elèctriques</a>
+            <a href="/ca/installacions-fotovoltaiques.html">Instal·lacions fotovoltaiques</a>
+            <a href="/ca/domotica.html">Domòtica</a>
+            <a href="/ca/videovigilancia.html">Videovigilància</a>
+            <a href="/ca/connectivitat-internet.html">Connectivitat a internet</a>
+            <a href="/ca/comparador-energetic.html">Comparador energètic</a>
+          </div>
+        </div>
+
+        <a href="/ca/#sobre-nosaltres">Sobre nosaltres</a>
+        <a href="/ca/#zones">Zones</a>
+        <a href="/ca/#contacte">Contacte</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+
+      <h1>Videovigilància a Mallorca per a habitatges i negocis</h1>
+
+      <p>
+        Instal·lam sistemes de videovigilància per controlar accessos, zones comunes i espais sensibles amb una configuració clara i pràctica.
+      </p>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="tel:+34625570279">Telefonar ara</a>
+        <a class="btn btn-whatsapp" href="https://wa.me/34625570279" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <div class="section-head">
+        <h2>Serveis de videovigilància</h2>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Càmeres per a habitatges</h3>
+          <p>Control de perímetre, accessos i exteriors per guanyar tranquil·litat.</p>
+        </div>
+        <div class="card">
+          <h3>Sistemes per a negocis</h3>
+          <p>Solucions per protegir entrades, magatzems o zones de pas.</p>
+        </div>
+        <div class="card">
+          <h3>Visió remota</h3>
+          <p>Configuració per consultar imatges des del mòbil o altres dispositius autoritzats.</p>
+        </div>
+        <div class="card">
+          <h3>Gravació i control</h3>
+          <p>Sistemes pràctics per revisar esdeveniments quan sigui necessari.</p>
+        </div>
+        <div class="card">
+          <h3>Instal·lació ordenada</h3>
+          <p>Muntatge net i ben plantejat per integrar el sistema a cada espai.</p>
+        </div>
+        <div class="card">
+          <h3>Assessorament</h3>
+          <p>Ajuda per definir ubicacions, cobertura i el tipus de sistema adequat.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container about">
+
+      <div class="about-text">
+        <h2>Seguretat visual ben resolta</h2>
+
+        <p>
+          Una instal·lació de videovigilància ha de ser discreta, útil i fàcil de gestionar en el dia a dia.
+        </p>
+
+        <p>
+          A Multitask Services deixam els equips configurats perquè el client els pugui utilitzar amb claredat i sense complicacions innecessàries.
+        </p>
+
+        <p>
+          Cada projecte es planteja segons l'espai, el nivell de control cercat i la manera real d'ús.
+        </p>
+
+        <p>
+          Treballam a Petra, Manacor, Santa Margalida, Sant Joan, Vilafranca de Bonany, Felanitx, Porreres, Sant Llorenç, Porto Cristo, Sineu i Inca.
+        </p>
+      </div>
+
+      <div class="image">
+        <img src="https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Càmera de seguretat per a videovigilància">
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <div class="section-head">
+        <h2>Càmeres de seguretat a Mallorca</h2>
+      </div>
+
+      <div class="seo-box">
+        <p>
+          Instal·lam sistemes de videovigilància a Mallorca per a habitatges, negocis i espais que necessiten més control visual i seguretat.
+        </p>
+
+        <p>
+          Treballam especialment a Petra, Manacor, Santa Margalida, Sant Joan, Vilafranca de Bonany, Felanitx, Porreres, Sant Llorenç, Porto Cristo, Sineu i Inca.
+        </p>
+
+        <p>
+          Si necessites instal·lar càmeres de seguretat o revisar un sistema existent, pots contactar amb nosaltres per demanar pressupost.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <div class="contact-wrap">
+
+        <div class="contact-card">
+          <h3>Contacte</h3>
+          <p><strong>Telèfon:</strong> <a href="tel:+34625570279">625 570 279</a></p>
+          <p><strong>Email:</strong> <a href="mailto:multitaskservicesmallorca@gmail.com?subject=Sol%C2%B7licitud%20de%20pressupost">multitaskservicesmallorca@gmail.com</a></p>
+          <p><strong>Zona:</strong> Mallorca</p>
+        </div>
+
+        <div class="cta-box">
+          <h3>Demana pressupost</h3>
+          <p>
+            Si necessites càmeres de seguretat o vols revisar un sistema de videovigilància existent, posa't en contacte amb nosaltres.
+          </p>
+
+          <div class="actions">
+            <a class="btn btn-primary" href="tel:+34625570279">Telefonar</a>
+            <a class="btn btn-whatsapp" href="https://wa.me/34625570279" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Multitask Services Mallorca
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mainNav = document.getElementById('mainNav');
+    const servicesDropdown = document.getElementById('servicesDropdown');
+    const servicesButton = document.getElementById('servicesButton');
+
+    if (menuToggle && mainNav && servicesDropdown && servicesButton) {
+      const closeMenus = () => {
+        mainNav.classList.remove('open');
+        servicesDropdown.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        servicesButton.setAttribute('aria-expanded', 'false');
+      };
+
+      menuToggle.addEventListener('click', function (e) {
+        e.stopPropagation();
+        const isOpen = mainNav.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+
+        if (!isOpen) {
+          servicesDropdown.classList.remove('open');
+          servicesButton.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      servicesButton.addEventListener('click', function (e) {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          e.stopPropagation();
+          const isOpen = servicesDropdown.classList.toggle('open');
+          servicesButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        }
+      });
+
+      document.querySelectorAll('#mainNav a').forEach(link => {
+        link.addEventListener('click', function () {
+          if (window.innerWidth <= 768) {
+            closeMenus();
+          }
+        });
+      });
+
+      document.addEventListener('click', function (e) {
+        const clickInsideNav = mainNav.contains(e.target);
+        const clickOnToggle = menuToggle.contains(e.target);
+
+        if (!clickInsideNav && !clickOnToggle) {
+          closeMenus();
+        }
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          closeMenus();
+        }
+      });
+
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 768) {
+          closeMenus();
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
