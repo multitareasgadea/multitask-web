@@ -1,28 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset 
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
+  <!-- HOME -->
   <url>
     <loc>https://www.multitask-services.com/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.multitask-services.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.multitask-services.com/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.multitask-services.com/de/" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.multitask-services.com/ca/" />
   </url>
 
+  <!-- ELECTRICIDAD -->
   <url>
     <loc>https://www.multitask-services.com/instalaciones-electricas.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.multitask-services.com/instalaciones-electricas.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.multitask-services.com/en/electrical-installations.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.multitask-services.com/de/elektroinstallationen.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.multitask-services.com/ca/installacions-electriques.html" />
   </url>
 
+  <!-- FOTOVOLTAICA -->
   <url>
     <loc>https://www.multitask-services.com/instalaciones-fotovoltaicas.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.multitask-services.com/instalaciones-fotovoltaicas.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.multitask-services.com/en/solar-installations.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.multitask-services.com/de/solaranlagen.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.multitask-services.com/ca/installacions-fotovoltaiques.html" />
   </url>
 
+  <!-- DOMOTICA -->
   <url>
     <loc>https://www.multitask-services.com/domotica.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.multitask-services.com/domotica.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.multitask-services.com/en/home-automation.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.multitask-services.com/de/smart-home.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.multitask-services.com/ca/domotica.html" />
   </url>
 
+  <!-- VIDEOVIGILANCIA -->
   <url>
     <loc>https://www.multitask-services.com/videovigilancia.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.multitask-services.com/videovigilancia.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.multitask-services.com/en/cctv.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.multitask-services.com/de/videoueberwachung.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.multitask-services.com/ca/videovigilancia.html" />
   </url>
 
+  <!-- INTERNET -->
   <url>
     <loc>https://www.multitask-services.com/conectividad-internet.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.multitask-services.com/conectividad-internet.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.multitask-services.com/en/internet-connectivity.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.multitask-services.com/de/internetverbindungen.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.multitask-services.com/ca/connectivitat-internet.html" />
   </url>
 
 </urlset>
