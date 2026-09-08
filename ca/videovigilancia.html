@@ -1,4 +1,24 @@
-<!-- Conversiones Google Ads: WhatsApp y llamada web -->
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <!-- Cookiebot CMP -->
+<script id="Cookiebot"
+        src="https://consent.cookiebot.com/uc.js"
+        data-cbid="b98e5774-5a1d-44b6-8327-232555344849"
+        type="text/javascript"
+        async>
+</script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18396105231"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18396105231');
+</script>
+
+  <!-- Conversiones Google Ads: WhatsApp y llamada web -->
 <script>
 document.addEventListener('click', function(event) {
   const link = event.target.closest('a');
@@ -7,7 +27,6 @@ document.addEventListener('click', function(event) {
 
   const href = link.getAttribute('href') || '';
 
-  // Conversión: clic en WhatsApp
   if (
     href.includes('wa.me/34614590009') ||
     href.includes('api.whatsapp.com')
@@ -17,7 +36,6 @@ document.addEventListener('click', function(event) {
     });
   }
 
-  // Conversión: clic en teléfono 614 590 009
   if (
     href === 'tel:+34614590009' ||
     href === 'tel:614590009'
@@ -28,17 +46,7 @@ document.addEventListener('click', function(event) {
   }
 });
 </script>
-<html lang="ca">
-<head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18396105231"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'AW-18396105231');
-</script>
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
