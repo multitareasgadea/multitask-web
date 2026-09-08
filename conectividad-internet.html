@@ -10,6 +10,37 @@
 
   gtag('config', 'AW-18396105231');
 </script>
+
+  <!-- Conversiones Google Ads: WhatsApp y llamada web -->
+<script>
+document.addEventListener('click', function(event) {
+  const link = event.target.closest('a');
+
+  if (!link) return;
+
+  const href = link.getAttribute('href') || '';
+
+  // Conversión: clic en WhatsApp
+  if (
+    href.includes('wa.me/34614590009') ||
+    href.includes('api.whatsapp.com')
+  ) {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18396105231/0eaiCJS4v_EeCI-U-cNE'
+    });
+  }
+
+  // Conversión: clic en teléfono 614 590 009
+  if (
+    href === 'tel:+34614590009' ||
+    href === 'tel:614590009'
+  ) {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18396105231/uZ-RCPqDyvEcEI-U-cNE'
+    });
+  }
+});
+</script>
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
